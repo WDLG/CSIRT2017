@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<style>
+form {
+    border: 3px solid #f1f1f1;
+    width: 30%;
+    heigth: 100%;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+
+.imgcontainer {
+    text-align: center;
+
+}
+
+img.avatar {
+width: 40%;
+border-radius: 50%;
+}
+
+.container {
+position: absolute;
+		/*nos posicionamos en el centro del navegador*/
+		top:30%;
+		left:50%;
+		/*determinamos una anchura*/
+		width:400px;
+		/*indicamos que el margen izquierdo, es la mitad de la anchura*/
+		margin-left:-200px;
+		/*determinamos una altura*/
+
+		/*indicamos que el margen superior, es la mitad de la altura*/
+		margin-top:-150px;
+		border:1px solid #808080;
+padding: 16px;
+
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+</style>
+<body>
+
+<h2>Ingreso</h2>
+
+		
+  <form id = "log" method = "post" action = "model.php">
+
+
+  <div class="container">
+    <div class="imgcontainer">
+      <img src="bu.png" alt="Avatar" class="avatar">
+    </div>
+    <label><b>Usuario</b></label>
+    <br><br>
+    <input type="text" placeholder="Nombre de Usuario" name="alias" required>
+    <br><br>
+    <label><b>Clave</b></label>
+    <br><br>
+    <input type="password" placeholder="Password" name="cont" required>
+    <br><br>
+    <button type="submit">Login</button>
+
+  </div>
+	<div id = "errDiv">
+	</div>
+
+</form>
+
+</body>
+</html>
