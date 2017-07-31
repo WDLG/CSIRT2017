@@ -18,6 +18,3 @@ if match_pattern!=None:
 		print "NO ES VULNERABLE"
 else:
 	print "NO ES VULNERABLE"
-
-
-print len(html)	
